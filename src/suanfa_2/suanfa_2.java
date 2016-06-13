@@ -11,7 +11,7 @@ public class suanfa_2 {
         for (int i = 101; i < 200; i++) {
             if (isRight(i)) {
                 sum++;
-                System.out.println(i);
+                System.out.println("素数" +i);
             }
         }
         System.out.println("共有素数" + sum + "个");
