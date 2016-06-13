@@ -24,9 +24,12 @@ public class suanfa_3 {
     }
     //成员方法对数字进行拆分
     private static int[]  getEveryItem(int num){
+        //整型数组存储各个数位
         int[] intArray=new int[3];
+        //字符型数组便于用ASCII码之间转换int
         char[] charArray=(num+"").toCharArray();
         for (int i=0;i<3;i++){
+            //0对应的ASCII码值为48
             intArray[i]=charArray[i]-48;
         }
         return intArray;
